@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
+import { Link } from 'react-router-dom';
+
 export default class Home extends Component {
   render() {
     return (
@@ -8,6 +10,9 @@ export default class Home extends Component {
         <Button>Default</Button>
         <Button type="dashed">Dashed</Button>
         <Button type="danger">Danger</Button>
+        <Link to="/about">
+          About
+        </Link>
       </div>
     )
   }
